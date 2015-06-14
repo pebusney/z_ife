@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	* { margin:0; 
+		padding:0; }
+	#content {
+		margin: 10px 100px;/*随便设*/
+		padding: 10px;/*随便设*/
+		height: 322px;/*??*/
+		background-color: #ff6;
+	}
+	#left {
+		float: left;
+		width: 270px;
+		border: 1px solid red;
+		padding: 10px;
+		
+		height: 300px;
+		background-color: #ddd;
+	}
+	#middle {
+		float: left;
+		margin: 0 -292px;/*left.offsetWidth*/
+		width: 100%;
+	}
+	#middle .inner {
+		margin: 0 282px 0 302px;/*0 right.offsetWidth+中右之间的距离  0 left.offsetWidth +  左中之间的距离*/
+
+
+		background-color: #eee;
+		height: 300px;
+		border: 1px solid red;/*随便设*/
+		padding: 10px;/*随便设*/
+	}
+	#right {
+		float: right;
+		width: 250px;
+		border: 1px solid red;
+		padding: 10px;
+
+		height: 300px;
+		background-color: #ddd;
+	}
+	</style>
+</head>
+<body>
+<div id="content">
+	<div id="left">left</div>
+	<div id="middle">
+		<div class="inner">middle</div>
+	</div>
+	<div id="right">right</div>
+</div>
+</body>
+</html>

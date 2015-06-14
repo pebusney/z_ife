@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task0001</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	html, body {
+		margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";
+		text-align: center;/*配合div2的display: inline-block;,可将div2整个水平居中*/
+	}
+	h1 {
+		color: blue;
+		text-transform: capitalize;/*首字母大写*/
+		text-align: center;/*文本对齐方式 居中*/
+	}
+	h2 {
+		font-size: 14px;
+	}
+	p {
+		margin: 0 auto;
+		width: 960px;
+		font-size: 12px;
+		color: yellow;
+		background-color: black;
+		text-indent: 30px;/*首行缩进*/
+		word-spacing: 25px;/*单词间的距离，对中文不管用*/
+		white-space: pre-line;/*空白处理，合并空白保留换行符*/
+		line-height: 25px;
+		font-weight: normal;
+	}
+	img {
+		border: 2px solid red;
+	}
+	a{
+
+	}
+	a:hover {
+		text-decoration: underline;/*下划线*/
+	}
+
+	#div1{
+		margin: 0 auto 10px;
+		width: 960px;
+		height: 100px;
+		background-color: red;
+	}
+	#div2 {
+		display: inline-block;
+		width: 960px;
+		height: 100px;
+		background-color: red;
+		margin-bottom: 10px;
+	}
+
+
+	#div3 {/*都是初始值 其宽 = left.offsetWidth + 左右两边之间空隙 + right.offsetWidth*/
+		margin: 0 100px; 
+		padding: 10px;
+		height: auto;/*初始值 height = left.offsetHeight = content.offsetHeight*/
+		background-color: #cef;
+		/*border: 10px solid #ccc;*/
+		}
+	#left {/*初始：offsetWidth(100px) */
+		position: absolute;
+		left: 110px;/*div3.margin-left + div3.padding-left( + div3.border)*/
+		border: 1px solid #ccc;/*初始*/
+		padding: 10px;/*初始*/
+		width: 78px;/*文字宽度 width = offsetWidth - 2border - 左右padding*/
+		height: auto;/*文字高度 height = div3.height - 2border - 上下padding =*/
+		background-color: #ddd;
+	}
+	#right {
+		width: 100%;
+		/*background-color: blue;*/
+	}
+	#content {
+		margin-left: 110px;/*相对于right110, 110 = left.offsetWidth + 左右两边的空隙*/
+		border: 1px solid #ccc;/*初始*/
+		padding: 10px;/*初始*/
+		height: auto;/*文字高度 height = div3.height - 2border - 上下padding =*/
+		background-color: #ddd;
+	}
+
+
+	#div4 {
+		margin: 10px auto;
+		width: 960px;
+		height: 100px;
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<h1>pebusney</h1>
+	<ul>
+		<li><a href="task0001.html">HomePage</a></li>
+		<li><a href="pebusney.com">Blog</a></li>
+	</ul>
+	<h1>我是个二级标题啦啦啦</h1>
+	<p>练个小习~这是一个小段落哦,this is a paragraph~
+	一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来。叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第二天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果然生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的廊街，且跨过小街直至河埠。</p>
+	<img src="img/task0001.gif" />
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3">
+		<div id="left">啦啦啦啦啦啦啦啦啦</div>
+		<div id="right">
+			<div id="content">一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直至河埠。
+			一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直至河埠。
+			一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直至河埠。
+			一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直至河埠。
+			</div>
+		</div>
+	</div>
+	<div id="div4">一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直至河埠。</div>
+</body>
+</html>

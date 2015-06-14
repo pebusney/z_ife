@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+* { margin:0; 
+	padding:0; }
+#content {
+	margin: 10px 100px;
+	padding: 10px;
+
+	height: 222px;
+	background-color: #ff6;
+}
+#middle { 
+	position:absolute; 
+	left:342px; /*content.marginLeft + content.paddingLeft + left.offsetWidth + 左中距离*/
+	right:342px;/*content.marginRight + content.paddingRight + right.offsetWidth + 中右距离*/
+	border: 1px solid red;
+	padding: 10px;
+
+	height:200px; 
+	background-color: #eee;
+}/*绝对定位，使content不占据html文档流空间，让后面的left,right浮上去*/
+#left { 
+	float:left;
+	width:200px;
+	border: 1px solid red;
+	padding: 10px;
+	
+	height:200px;
+	background-color: #ddd;
+}
+#right { 
+	float:right;
+	width:200px;
+	border: 1px solid red;
+	padding: 10px;
+	
+	height:200px; 
+	background-color: #ddd;
+}
+</style>
+</head>
+<body>
+<div id="content">
+	<div id="middle">middle</div>
+	<div id="left">left</div>
+	<div id="right">right</div>
+</div>
+</body>
+</html>

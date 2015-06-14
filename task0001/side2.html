@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	html, body {
+	margin: 0;
+	padding: 0;
+	}
+
+	/*记1和2：left.offsetWidth = 100px；
+	  记3：左右之间的空隙 = 10px;*/
+
+	#div3 {/*其宽 = left.offsetWidth + 左右之间空隙 + right.offsetWidth*/
+		margin: 10px 100px; /*记1*/
+		padding: 10px;/*记1*/
+		height: auto;
+		background-color: #cef;
+		}
+	#left {
+		position: absolute;
+		left: 110px;/*算1，div3.margin-left + div3.padding-left( + div3.border)*/
+		border: 1px solid #ccc;/*记2*/
+		padding: 10px;/*记2*/
+		width: 78px;/*算2：文字宽度 width = offsetWidth - 2border - 左右padding*/
+		height: auto;
+		background-color: #ddd;
+	}
+	#right {
+		width: 100%;
+		/*background-color: blue;*/
+	}
+	#content {
+		margin-left: 110px;/*算3，相对于right110, 110 = left.offsetWidth + 左右之间的空隙*/
+		border: 1px solid #ccc;
+		padding: 10px;
+		height: auto;
+		background-color: #ddd;
+	}
+	</style>
+</head>
+<body>
+<div id="div3">
+	<div id="left">啦啦啦啦啦啦啦啦啦</div>
+	<div id="right">
+		<div id="content">一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋叫花子执意不肯，老板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。天叫花子在店门板上留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店生意兴隆。店主为感谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架街，且跨过小街直至河埠。
+		一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直河埠。
+		一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直河埠。
+		一天小店打烊时，见一叫花子在店前的屋檐下避雨，就让他进屋来叫花子执意不肯，板就拿了一卷竹帘连在屋檐上，临时搭了个小棚让叫花子躲雨。第天叫花子在店门板留下一行字：“廊棚一夜遮风雨，积善人家好运来。”此后烟纸店果生意兴隆。店主为谢叫花子的恩德，索性在店面前的屋檐下搭了个有砖有瓦有木架的街，且跨过小街直河埠。
+		</div>
+	</div>
+</div>
+</body>
+</html>

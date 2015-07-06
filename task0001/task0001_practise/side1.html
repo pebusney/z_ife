@@ -19,18 +19,18 @@
 		margin-left: 120px;/*left.offsetWidth*/
 		vertical-align: bottom;/*不加的话底部会多出来一定高度*/
 
-		/*清除浮动，貌似不加也可以*/
-		zoom: 1;
+		/*清除浮动，貌似不加也可以
+		zoom: 1;*/
 	}
-	/*清除浮动，貌似不加也可以*/
+	/*清除浮动，貌似不加也可以
 	.content:after {
 		display: block;
 		clear: both;
 		content: "";
-	}
+	}*/
 	.left{
 		position: relative;
-		float: left;
+		/*float: left;*/
 		margin-left: -120px;/*只要等于content里的border-left就好,left的marginLeft外侧与content的paddingLeft外侧的距离*/
 		border: 1px solid #ccc;
 		padding: 10px;
@@ -38,7 +38,7 @@
 		background-color: #ddd;
 	}
 	.right{
-		float: left;
+		/*float: left;*/
 		margin-left: 10px;
 		border: 1px solid #ccc;/*随意设置*/
 		padding: 10px;

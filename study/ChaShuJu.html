@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<ul id="addLi">
+	
+</ul>
+</body>
+<script src="E:/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/template">
+	<li class="content_list inlineBlock" id="{id1}">
+		<h2 class="title ibIn"><a href="">{dshtitle}</a></h2>
+		<div class="manage_speech ibIn">
+			<button class="detail" >详情</button>
+			<button class="agree btn">同意发表</button>
+			<button class="disagree btn">不同意发表</button>
+		</div>
+		<div class="main speech_detial">
+			<div class="sort">分类：<span id="sort">{sort}</span></div>
+			<div class="keyword">关键字：<span>{keyword}</span></div>
+			<button class="close">关闭详情</button>
+			<!-- 发言内容 -->
+			<div class="speech_txt" contenteditable="true">{fytxt}<br/></div>
+		</div>
+		</li>
+</script>
+<script type="text/javascript">
+	function formatTemplate(dta, tmpl) {  
+	    var format = {  
+	        name: function(x) {  
+	            return x  
+	        }  
+	    };  
+	    return tmpl.replace(/{(\w+)}/g, function(m1, m2) {  
+	        if (!m2)  
+	            return "";  
+	        return (format && format[m2]) ? format[m2](dta[m2]) : dta[m2];  
+	    });  
+	} 
+	var data = [
+		{"id1 ":"1","dshtitle":"待审核1","sort":"分类1","keyword":"关键字1","fytxt":"这是内容1"},
+		{"id1":"2","dshtitle":"待审核2","sort":"分类2","keyword":"关键字2","fytxt":"这是内容2"},
+		{"id1":"3","dshtitle":"待审核3","sort":"分类3","keyword":"关键字3","fytxt":"这是内容3"},
+		{"id1":"4","dshtitle":"待审核4","sort":"分类4","keyword":"关键字4","fytxt":"这是内容4"},
+		{"id1":"5","dshtitle":"待审核5","sort":"分类5","keyword":"关键字5","fytxt":"这是内容5"},
+		{"id1":"6","dshtitle":"待审核6","sort":"分类6","keyword":"关键字6","fytxt":"这是内容6"},
+		{"id1":"7","dshtitle":"待审核7","sort":"分类7","keyword":"关键字7","fytxt":"这是内容7"},
+		{"id1":"8","dshtitle":"待审核8","sort":"分类8","keyword":"关键字8","fytxt":"这是内容8"}
+		]; 
+	var html = $('script[type="text/template"]').html();  
+    	var arr = [];  
+    	$.each(data, function(i, o) {  
+    	    arr.push(formatTemplate(o, html));  
+    	});  
+    	$('#addLi').append(arr.join(''));
+</script>
+
+</html>

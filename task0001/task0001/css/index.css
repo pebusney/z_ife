@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #eee;
+	font-family: Arial;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+header {
+	width: 100%;
+	height: 80px;
+	background-color: #522a5c;
+	clear: both;
+	display: inline-block;
+	position: relative;
+}
+header a, footer a {
+	color: #fff;
+}
+#middle {
+	height: 80px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#head_img1 {
+	position: absolute;
+	top: 20px;
+}
+#middle ul {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+}
+#middle ul li {
+	width: 80px;
+	text-align: right;
+	float: left;
+}
+#head_img2 {
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 30px;
+}
+
+footer {
+	width: 100%;
+	height: 400px;
+	background-color: #333;
+}
+footer a {
+	color: #fff;
+	font-size: 14px;
+}
+#lianjie {
+	border-bottom: 1px solid #888;
+}
+#lianjie ul {
+	width: 320px;
+	margin: 0 auto;
+	padding: 10px 0;
+	height: 20px;
+}
+#lianjie ul li {
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+#link{
+	padding-top: 30px;
+	width: 960px;
+	margin: 0 auto;
+
+	zoom: 1;
+}
+#link:after {
+		display: block;
+		clear: both;
+		content: "";
+}
+.link_section {
+	width: 240px;
+	text-align: center;
+	float: left;
+}
+.link_section ul li {
+	line-height: 25px;
+}
+.link_section_a {
+	margin-bottom: 20px;
+}
+#banquan p {
+	padding-top: 30px;
+	text-align: center;
+	color: #fff;
+}
+#banquan {
+	margin: 0 auto;
+	display: block
+}
+#banquan img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#section_1 {
+	width: 100%;
+	height: 500px;
+	background: url(../img/index/section_1_bg.jpeg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#section_1 .content {
+	position: absolute;
+	padding: 10px 15px;
+	right: 100px;
+	bottom: 0;
+	width: 470px;
+	height: 180px;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%); 
+
+	font-size: 14px;
+	line-height: 28px;
+}
+#section_1 .content h3 {
+	text-align: right;
+	padding-right: 15px;
+}
+#section_2 {
+	margin: 10px auto;
+	width: 960px;
+	height: auto;/*自适应高度且等高*/
+
+	overflow: hidden;/*自适应高度且等高*/
+	
+}
+.tuwen {
+	float: left;
+	padding: 10px;
+	width: 290px;
+	margin: 0 15px 0 0;
+	margin-bottom: -1000px;/*自适应高度且等高*/
+	padding-bottom: 1000px;/*自适应高度且等高*/
+
+	min-height: 480px;
+	background-color: #fff;
+}
+.tuwen img {
+	width: 290px;
+	height: 180px;
+}
+.tuwen .text {
+	margin-top: 15px;
+	padding: 10px 30px 25px;
+	height: auto;/*自适应高度且等高*/
+	
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.right {/*使用负边距让该容器增宽15px，此时right宽975px，然后超出部分隐藏*/
+	margin-right: -15px;
+	overflow: hidden;
+}
+
+
+#section_3 {
+	width: 100%;
+	margin-top: 110px;
+	display: inline-block;/*不加的话会导致该元素上边距自动减小以容纳圆形图片，照片负边距效果无效*/
+
+	height: 500px;
+	background-color: #fff;
+}
+#photo {
+	margin: -40px auto 0;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border-style: none;
+	background: url(../img/index/photo.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#myself {
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px;
+}
+#myself h2 {
+	text-align: center;
+}
+#myself .text {
+	padding: 20px 10px;
+	line-height: 25px;
+	letter-spacing: 5px;
+}
+.text {
+	text-indent: 2em;
+}
